@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      .Template-hero-section-global .carousel-inner {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .Template-hero-section-global .carousel-inner .carousel-item {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .Template-hero-section-global .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-image: none;
+        z-index: 111;
+      }
+
+      .Template-hero-section-global .carousel-control-next,
+      .carousel-control-prev {
+        z-index: 111;
+      }
+
+      .Template-hero-section-global .carousel-control-prev-icon i {
+        font-size: 2rem;
+        background: white;
+        filter: invert(0) grayscale(0);
+        color: black;
+        padding: 1rem;
+        border-radius: 50px;
+      }
+
+      .Template-hero-section-global .carousel-control-next-icon i {
+        font-size: 2rem;
+        background: white;
+        filter: invert(0) grayscale(1000);
+        color: black;
+        padding: 1rem;
+        border-radius: 50px;
+      }
+
+      .Template-hero-section-global .carousel-control-next {
+        right: 29px;
+        top: -3px;
+      }
+
+      .Template-hero-section-global .carousel-caption {
+        z-index: 111;
+      }
+
+      .Template-hero-section-global .carousel-caption h5 {
+        font-size: 7rem;
+        font-weight: bolder;
+        color: white;
+      }
+
+      .Template-hero-section-global .carousel-caption p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+      }
+
+      .Template-hero-section-global .hero-btn {
+        width: 200px;
+        height: auto;
+        padding: 1rem;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        border-radius: 50px;
+      }
+
+      .Template-hero-section-global .carousel-item {
+        position: relative;
+      }
+
+      .Template-hero-section-global .carousel-item:after {
+        display: block;
+        content: '';
+        clear: both;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          to top,
+          rgba(72, 72, 72, 0.75) 0%,
+          rgba(255, 102, 0, 0.1) 100%
+        );
+      }
+
+      .carousel-caption {
+        position: absolute;
+        right: 0 !important;
+        bottom: 1.25rem;
+        left: 0 !important;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+        height: 300px;
+        margin: auto;
+        background: linear-gradient(
+          to top,
+          rgba(72, 72, 72, 0.75) 0%,
+          rgba(255, 102, 0, 0.1) 100%
+        );
+      }
+    </style>
+  </head>
+
+  <main>
+    <div class="Template-hero-section-global">
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active ratio ratio-16x9"
+            data-bs-interval="10000"
+            style="
+              background-image: url(https://martinselig.com/wp-content/uploads/2021/08/Web_07.jpg);
+            "
+          >
+            <img src="" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Software</h5>
+              <p>
+                Extensive hours of support possible through NY based project
+                management.
+              </p>
+              <button class="hero-btn">
+                <span></span>Read more<span>
+                  <i class="fas fa-angle-double-right"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="carousel-item ratio ratio-16x9"
+            data-bs-interval="2000"
+            style="
+              background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2ZmaWNlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+            "
+          >
+            <img src="..." class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Developers</h5>
+              <p>
+                Excellent communication with 100% Transparency and Clear
+                Processes.
+              </p>
+              <button class="hero-btn">
+                <span></span>Read more<span>
+                  <i class="fas fa-angle-double-right"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="carousel-item ratio ratio-16x9"
+            style="
+              background-image: url(https://images.unsplash.com/photo-1515982417415-491fb03b9fbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b2ZmaWNlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+            "
+          >
+            <img src="..." class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Management</h5>
+              <p>Culture based company with Employee Happiness at the heart.</p>
+              <button class="hero-btn">
+                <span></span>Read more<span>
+                  <i class="fas fa-angle-double-right"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true">
+            <i class="fas fa-arrow-circle-left"></i>
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true">
+            <i class="fas fa-arrow-circle-right"></i>
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>
